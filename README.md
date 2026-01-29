@@ -1,6 +1,8 @@
 # Site de vendas - Empresa de Pesca do Ítalo
 ---
 
+![Empresa de Pesca do Ítalo Logo](./assets/logo.png)
+
 ## No que consite?
 
 Numa landing page para a empresa *Empresa de Pesca do Ítalo*
