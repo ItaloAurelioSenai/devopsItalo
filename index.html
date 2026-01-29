@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Pesca do Ítalo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pZf8+1mX6qH1K0r6kY9sQZ8nQz1qQ/Ev1YwO3Q0Zk1f1J4jYwZzQZ0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">
+                <img src="./assets/logo.png" alt="" class="brand-logo" aria-hidden="true">
+                <div>
+                    <h1>Empresa de Pesca do Ítalo</h1>
+                    <p class="tag">Tradição, qualidade e responsabilidade</p>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="#servicos">Serviços</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contato" class="btn">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h2>Do mar para você — qualidade desde 1914</h2>
+                    <p>Produtos e serviços de pesca com foco em sustentabilidade e cuidado com o cliente.</p>
+                    <div class="hero-actions">
+                        <a href="#produtos" class="btn primary">Ver produtos</a>
+                        <a href="#contato" class="btn ghost">Fale conosco</a>
+                    </div>
+                </div>
+                <div class="hero-cards">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-fish"></i>
+                        <div>
+                            <h3>120+</h3>
+                            <p>Produtos disponíveis</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-ship"></i>
+                        <div>
+                            <h3>50+</h3>
+                            <p>Parcerias locais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="container cards-section">
+            <h2 class="section-title">Nossos Destaques</h2>
+            <p class="section-sub">Algumas opções populares e serviços oferecidos</p>
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-icon">
+                        <img src="./assets/barco.jpg" alt="Barco">
+                    </div>
+                    <h3>Barcos e Equipamentos</h3>
+                    <p>Aluguel, manutenção e venda de equipamentos profissionais.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Revisão completa</li>
+                        <li><i class="fa-solid fa-check"></i> Peças originais</li>
+                        <li><i class="fa-solid fa-check"></i> Assistência técnica</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">A partir de R$ 150/dia</span>
+                        <a href="#contato" class="btn small">Quero saber</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">
+                        <img src="./assets/rede.jpg" alt="Rede de pesca">
+                    </div>
+                    <h3>Redes e Acessórios</h3>
+                    <p>Produtos selecionados para uso amador e profissional.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Materiais resistentes</li>
+                        <li><i class="fa-solid fa-check"></i> Garantia</li>
+                        <li><i class="fa-solid fa-check"></i> Entrega rápida</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">A partir de R$ 39,90</span>
+                        <a href="#contato" class="btn small">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">
+                        <img src="./assets/consultoria.jpg" alt="Consultoria sustentável">
+                    </div>
+                    <h3>Consultoria Sustentável</h3>
+                    <p>Projetos e orientações para pesca responsável e certificação.</p>
+                    <ul class="card-features">
+                        <li><i class="fa-solid fa-check"></i> Avaliação técnica</li>
+                        <li><i class="fa-solid fa-check"></i> Planos de ação</li>
+                        <li><i class="fa-solid fa-check"></i> Treinamentos</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">Sob consulta</span>
+                        <a href="#contato" class="btn small">Solicitar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="container contact-section">
+            <h2 class="section-title">Contato</h2>
+            <p>Tem dúvidas ou quer um orçamento? Entre em contato conosco.</p>
+            <div class="contact-row">
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:italoaurelio0@gmail.com">italoaurelio0@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>Telefone</h4>
+                    <a href="tel:+5532999200455">(32) 99920-0455</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2024 Empresa de Pesca do Ítalo Aurélio. Todos os direitos reservados.</p>
+            <div class="socials">
+                <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
