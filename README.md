@@ -1,7 +1,7 @@
 # Site de vendas - Empresa de Pesca do Ítalo
 ---
 
-![Empresa de Pesca do Ítalo Logo](./assets/logo.png)
+![Empresa de Pesca do Ítalo Logo](./assets/bannerReadme.png)
 
 ## No que consite?
 
