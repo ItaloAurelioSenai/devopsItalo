@@ -4,6 +4,9 @@
   --muted:#9aa4b2;
   --accent:#2dd4bf;
   --accent-2:#60a5fa;
+  --text:#e6eef6;
+  --light-bg:#f7fafc;
+  --light-text:#072033;
   --glass: rgba(255,255,255,0.04);
   --radius:14px;
   --container:1200px;
@@ -16,9 +19,15 @@ body{
   margin:0;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   background: linear-gradient(180deg, #071028 0%, #031021 100%);
-  color:#e6eef6;
+  color:var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+}
+
+/* Light theme override */
+body.light{
+  background: linear-gradient(180deg, var(--light-bg) 0%, #f0f6fb 100%);
+  color:var(--light-text);
 }
 
 .container{max-width:var(--container);margin:0 auto;padding:28px}
@@ -31,6 +40,7 @@ body{
 .tag{margin:0;color:var(--muted);font-size:13px}
 .nav a{color:var(--muted);text-decoration:none;margin-left:20px}
 .nav a.btn{background:transparent;border:1px solid var(--glass);padding:8px 12px;border-radius:10px;color:var(--accent);}
+.theme-toggle{background:transparent;border:1px solid var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);cursor:pointer;margin-left:12px}
 
 .hero{padding:56px 0}
 .hero-inner{display:flex;gap:32px;align-items:center}
@@ -68,6 +78,29 @@ body{
 .contact-card{flex:1;padding:16px;border-radius:12px;background:rgba(255,255,255,0.02);display:flex;flex-direction:column;gap:8px;align-items:flex-start}
 .contact-card i{font-size:20px;color:var(--accent)}
 .contact-card a{color:var(--accent)}
+
+/* About / FAQ / contact form styles */
+.about-section .about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:12px}
+.faq-list details{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin:8px 0}
+.faq-list summary{cursor:pointer;font-weight:600}
+
+.contact-form{width:100%;max-width:720px}
+.form-row{display:flex;flex-direction:column;margin-bottom:12px}
+.contact-form label{font-size:14px;margin-bottom:6px;color:var(--muted)}
+.contact-form input,.contact-form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:inherit;transition:box-shadow .15s,border-color .15s}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,0.35)}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;box-shadow:0 4px 20px rgba(2,6,23,0.25);border-color:var(--accent)}
+.contact-form input.invalid,.contact-form textarea.invalid{border-color:#f87171}
+.contact-form .btn{align-self:flex-start}
+
+/* Toast */
+.toast{position:fixed;right:20px;bottom:20px;padding:12px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#072033;box-shadow:0 6px 20px rgba(2,6,23,0.4);z-index:9999;transition:opacity .25s}
+
+/* WhatsApp floating button */
+.whatsapp-float{position:fixed;right:20px;bottom:80px;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(2,6,23,0.4);z-index:9998}
+
+/* Smooth scroll via CSS */
+html{scroll-behavior:smooth}
 
 .site-footer{border-top:1px solid var(--glass-2);padding:18px 0;margin-top:40px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center}
